@@ -1,0 +1,16 @@
+{	
+	"results":[
+		{
+			"person1" :
+			{
+				"name":"Mayank",
+				"age":26
+			},
+			"person2" :
+			{
+				"name":"Maitri",
+				"age":24
+			}
+		}	
+	]
+}	

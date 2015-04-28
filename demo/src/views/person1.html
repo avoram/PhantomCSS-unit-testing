@@ -1,0 +1,18 @@
+
+<div id = "person1-div">
+    <div id = "home-link"><a ui-sref="home">Home</a></div>
+    <div id = "simple-controller"><a id ="my-controller-link" ui-sref = "simpleController">simpleController</a></div>
+
+    <div>
+        <input type = "text" ng-model = "name"></input>
+        <div>Firsttt Person is {{name}}</div>
+        <div>Work at {{location}}</div>
+        <div>Marital status is {{maritalStatus}}</div>
+    </div>
+
+
+
+    <mayank-info></mayank-info>
+    <button ng-click = "changePerson()">Change Person by using $state.go()</button>
+</div>
+

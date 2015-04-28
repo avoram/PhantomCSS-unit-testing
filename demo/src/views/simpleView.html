@@ -1,0 +1,26 @@
+<div id = "my-simple-div" ng-show="apiData.length == 6">
+
+<aside id = "simple-view-aside-title">This is showing the functionality of custom filters</aside>
+<br>
+It should show the origin {{origin}}.
+
+<p> This is showing the use of custom filter </p>
+<ul>
+	<li ng-repeat = "object in objectArrary">
+		<p>Person is {{object.person1.name | myFilter | uppercase}}</p> <!-- Here myFiler is a custom filter -->
+		<p>Age is {{object.person1.age | mySecondFilter}}</p><!-- Here mySecondFilter is a custom filter -->
+	</li>
+	<li ng-repeat = "object in objectArrary">
+		<p>Person is {{object.person2.name | myFilter | uppercase}} </p> <!-- Here myFiler is a custom filter -->
+		<p>Age is {{object.person2.age | mySecondFilter}}</p><!-- Here mySecondFilter is a custom filter -->
+	</li>
+
+	<div id ="api-data">
+
+		<ul id="api-data-show">
+			<li class="data-list" ng-repeat = "data in apiData">{{data}}</li>
+		</ul>
+
+	</div>
+</ul>
+</div>
